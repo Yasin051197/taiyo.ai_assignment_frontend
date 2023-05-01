@@ -1,0 +1,1 @@
+# taiyo.ai_assignment_frontend
