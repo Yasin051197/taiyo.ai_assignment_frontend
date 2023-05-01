@@ -6,7 +6,7 @@ const ChartsAndMaps = () => {
   return (
     <div>
         <Heading color={'white'} p={"10px 20px"} bg={"#28686e"}>Charts and Maps</Heading>
-        <Flex height={"500px"}>
+        <Flex>
             <Grid w={"20%"} border={"1px solid red"}>
                <Box><Link to="/">Contacts</Link></Box>
                <Box><Link to="/chartsandmaps">Charts & Maps</Link></Box>

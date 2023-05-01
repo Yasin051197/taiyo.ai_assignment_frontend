@@ -1,6 +1,11 @@
 input{
     margin-left: 20px;
 }
+#contact_page_div{
+    display: flex;
+    margin: 10px;
+    margin-bottom: 500px;
+}
 #form {
     width: 30%;
     margin: auto;
@@ -8,3 +13,31 @@ input{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 20px;
 }
+#data_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4%;
+    margin: auto;
+}
+#data_container div{
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: grid;
+    gap: 10px;
+}
+#data_container div button{
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 900px) {
+    #contact_page_div{
+        display: grid;
+        margin: 10px;
+    }
+    #data_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 4%;
+        margin: auto;
+    }
+  }
