@@ -81,11 +81,11 @@ const viewContact=()=>{
             {window.innerWidth>900?<Grid padding={"10px"} w={"19%"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
                <Box><Link style={{textDecoration:"none",fontSize:"20px",fontWeight:"bold"}} to="/">Contacts</Link></Box>
                <Box><Link style={{textDecoration:"none",fontSize:"20px",fontWeight:"bold"}} to="/chartsandmaps">Charts & Maps</Link></Box>
-            </Grid>:<Flex padding={"10px"} w={"19%"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
+            </Grid>:<Flex justifyContent={"space-evenly"} w={"100%"} margin={'auto'} marginBottom={"20px"} p={"10px 0px"}  boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
                <Box><Link style={{textDecoration:"none",fontSize:"20px",fontWeight:"bold"}} to="/">Contacts</Link></Box>
                <Box><Link style={{textDecoration:"none",fontSize:"20px",fontWeight:"bold"}} to="/chartsandmaps">Charts & Maps</Link></Box>
             </Flex>}
-            <Box padding={"30px"} h={"100%"} w={"79%"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"} border={"1px solid gray"}>
+            <Box padding={"30px"} margin={'auto'}  w={"79%"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"} border={"1px solid gray"}>
                {flag?<></>:<Button marginTop={"20px"} onClick={onOpen}>Create Contact</Button>}
                <Box>
                 {
@@ -126,9 +126,9 @@ const viewContact=()=>{
                                    </PopoverTrigger>
                                    <PopoverContent backgroundColor={'#bbc1c6'} padding={'20px'} color='white' margin={'auto'}  >
                                      <PopoverCloseButton backgroundColor={'#bbc1c6'}><Button backgroundColor={"black"} color={'white'}>x</Button></PopoverCloseButton>
-                                     <Text>name- {el.name}</Text>
-                                     <Text>lastname- {el.lastName}</Text>
-                                     <Text>status- {el.status}</Text>
+                                     <Text color={"black"}>name- {el.name}</Text>
+                                     <Text color={"black"}>lastname- {el.lastName}</Text>
+                                     <Text color={"black"}>status- {el.status}</Text>
                                    </PopoverContent>
                                 </Popover>
                                 <Popover >
@@ -137,20 +137,20 @@ const viewContact=()=>{
                                </PopoverTrigger>
                                <PopoverContent backgroundColor={'#194d33'} padding={'10px'} color='white' margin={'auto'}   >
                                    <PopoverCloseButton backgroundColor={'#194d33'}><Button backgroundColor={"black"} color={'white'}>x</Button></PopoverCloseButton>
-                                        <label >First Name:</label>
+                                        <label >Name:</label>
                                           <input type="text" id="name" name="name" onChange={handleChangeEdit} />
                                             <br />
-                                            <br />
+                                        
                                         <label>Last Name:</label>
                                           <input type="text" id="lastName" name="lastName" onChange={handleChangeEdit}/>
-                                             <br />
-                                             <br />
+                                             
+                                            
                                         <label>Status:</label><input type="checkbox" id="status" name="status" value="active" onChange={handleChangeEdit}/>
                                         <label>Active</label>
                                            <input type="checkbox" id="status" name="status" value="inactive" onChange={handleChangeEdit}/>
                                         <label>Inactive</label>
                                           <br />
-                                          <br />
+                                    
                                           <button
                                             onClick={(e)=>handleSubmitEdit(e,el.id)}
                                             >Submit</button>

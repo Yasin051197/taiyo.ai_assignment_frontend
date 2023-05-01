@@ -29,15 +29,35 @@ input{
     padding: 5px 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 600px)  and (max-width: 900px){
     #contact_page_div{
         display: grid;
         margin: 10px;
     }
     #data_container{
         display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 4%;
+        margin: auto;
+    }
+    #form{
+        width: 90%;
+        margin: auto;
+    }
+  }
+  @media screen and (max-width: 599px) {
+    #contact_page_div{
+        display: grid;
+        margin: 10px
+    }
+    #data_container{
+        display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 4%;
+        margin: auto;
+    }
+    #form{
+        width: 90%;
         margin: auto;
     }
   }
