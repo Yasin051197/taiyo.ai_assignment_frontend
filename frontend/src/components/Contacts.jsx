@@ -30,11 +30,13 @@ const handleChange=(e)=>{
 
 const handleSubmit=(e)=>{
         e.preventDefault()
-        if(contacts){
+        if(contacts.name && contacts.lastName && contacts.status){
             dispatch(addContact({
                 id:v4(),
                 ...contacts
             }))
+        }else{
+          alert("please fill all creadentials")
         }
         setContacts({})
     }
