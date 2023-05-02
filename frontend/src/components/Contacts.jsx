@@ -14,7 +14,7 @@ const getData=async()=>{
 
 const Contacts = () => {
     const [flag,setFlag]=useState(false)
-    const [contacts,setContacts]=useState([])
+    const [contacts,setContacts]=useState([{name:String,lastName:String,status:String}])
     const [edit,setEdit]=useState({name:"",lastName:"",status:""})
     const [data,setData]=useState([])
     const dispatch=useDispatch()

@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"; 
-import Contacts from '../components/Contacts';
+
 import ChartsAndMaps from '../components/ChartsAndMaps';
+import Contacts from '../components/Contacts';
 
 
 const Routers = () => {
