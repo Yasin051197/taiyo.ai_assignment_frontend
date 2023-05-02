@@ -39,7 +39,9 @@ const handleSubmit=(e)=>{
         setContacts({})
     }
 
+const inputvalues=()=>{
 
+}
 const handleChangeEdit=(e)=>{
     const {name,value}=e.target;
   
@@ -78,10 +80,12 @@ const viewContact=()=>{
     <div id="contact_page">
         <Heading color={'white'} p={"10px 20px"} bg={"#28686e"}>Contact Page</Heading>
         <div id="contact_page_div">
-            {window.innerWidth>900?<Grid padding={"10px"} w={"19%"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
+            {window.innerWidth>900?<Box padding={"10px"} w={"19%"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
                <Box><Link style={{textDecoration:"none",fontSize:"20px",fontWeight:"bold"}} to="/">Contacts</Link></Box>
+               <br />
+               <br />
                <Box><Link style={{textDecoration:"none",fontSize:"20px",fontWeight:"bold"}} to="/chartsandmaps">Charts & Maps</Link></Box>
-            </Grid>:<Flex justifyContent={"space-evenly"} w={"100%"} margin={'auto'} marginBottom={"20px"} p={"10px 0px"}  boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
+            </Box>:<Flex justifyContent={"space-evenly"} w={"100%"} margin={'auto'} marginBottom={"20px"} p={"10px 0px"}  boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
                <Box><Link style={{textDecoration:"none",fontSize:"20px",fontWeight:"bold"}} to="/">Contacts</Link></Box>
                <Box><Link style={{textDecoration:"none",fontSize:"20px",fontWeight:"bold"}} to="/chartsandmaps">Charts & Maps</Link></Box>
             </Flex>}
@@ -112,7 +116,7 @@ const viewContact=()=>{
                 }
                </Box>
                {data.length<1?
-                    <Box margin={"auto"}  marginTop={"4%"} width={"40%"} border={"1px solid gray"}>
+                    <Box id="empty" margin={"auto"}  marginTop={"4%"} width={"50%"} border={"1px solid gray"}>
                         <Heading>No Contact Found Please add contact from Create Contact Button</Heading>
                     </Box>:
                     <Box marginTop={"4%"}>

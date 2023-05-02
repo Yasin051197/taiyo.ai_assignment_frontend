@@ -44,6 +44,9 @@ input{
         width: 90%;
         margin: auto;
     }
+    #empty{
+        width:90%
+    }
   }
   @media screen and (max-width: 599px) {
     #contact_page_div{
@@ -59,5 +62,8 @@ input{
     #form{
         width: 90%;
         margin: auto;
+    }
+    #empty{
+        width:90%
     }
   }
