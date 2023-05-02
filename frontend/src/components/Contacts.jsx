@@ -39,9 +39,7 @@ const handleSubmit=(e)=>{
         setContacts({})
     }
 
-const inputvalues=()=>{
 
-}
 const handleChangeEdit=(e)=>{
     const {name,value}=e.target;
   
