@@ -20,7 +20,7 @@
 </ol>
 <p>The chart can show the line graph of covid 19 active cases on the dates. For this Chart.js is used</p>
 <p>Maps can show all countries’ names and markers. Users can see the data related to that country, On clicking on that country’s marker that indicates the country name, total number of active, recovered cases, and deaths in that particular country as a pop-up. For getting this data Maptiler is used.</p>
-<p color:"#e66a3a" style={{color:"#e66a3a"}}>All the pages are responsive to three level screens like desktop, tabs, and mobiles.</p>
+<p color={"#e66a3a"} style={{color:"#e66a3a"}}>All the pages are responsive to three level screens like desktop, tabs, and mobiles.</p>
 
 <h4>For this assignment i use teck-Stacks-</h4>
 <h4>Html, Css, Javascript, React.js,React-Router, Json-Server, Api, Chart.js, React-leaflet, and Maptiler.</h4>
